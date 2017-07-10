@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Cinzel" rel="stylesheet">
+    <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -25,44 +26,124 @@
                     <ul class="nav navbar-nav">
                         <li><a href="#home" class="navItem">Home</a></li>
                         <li><a href="#about" class="navItem">About</a></li>
-                        <li><a href="#gallery" class="navItem">Gallery</a></li>
+                        <li><a href="#showDates" class="navItem">Show Dates</a></li>
+                        <li><a href="#contact" class="navItem">Contact</a></li>
+                        <!--<li><a href="#gallery" class="navItem">Gallery</a></li>-->
                     </ul>
                 </div>
             </div>
         </div><!-- /.navbar -->
     </div>
     <section id="home" class="first">
-        <div class="container" id="hero-text">
-            <h2 class="hero-text-header">GENKAI</h2>
+        <div class="container text-center" id="hero-text">
+            <h2 class="hero-text-header animated fadeInDown">GENKAI</h2>
 
-            <h2 class="hero-text-header">Japanese Antiques</h2>
-            <img src="images/LogoTest5.png" alt="GenKai Japanese Antiques">
+            <h2 class="hero-text-header animated fadeInDown">Japanese Antiques</h2>
+            <img class="animated fadeInDown" id="kanji" src="images/LogoTest5.png" alt="GenKai Japanese Antiques">
         </div>
 
     </section>
 
-    <section id="about" class="section">
+    <section class="container-fluid section">
+        <div id="about" class="row">
+            <div class="col-md-6">
+                <h1 class="text-center section-title middle-text">About Genkai Antiques</h1>
+                <p id="descriptionText" class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+            <div class="col-md-6 gridImage">
 
-        <div class="container section-title">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 gridImage2">
 
-            <h1>About Us</h1>
+            </div>
+            <div class="col-md-6">
+                <p class="text-center middle-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+        </div>
+        <div id="showDates" class="row section-title section">
+            <h1 class="text-center white" id="event-title">Upcoming Show</h1>
+
+            <hr style="border-top: 1px solid white; width: 20%;">
+            <div id="eventDateBox">
+                <h2 class="text-center white">Sun, November 18, 9:00am - 3:00pm</h2>
+                <h2 class="text-center white">Sat, November 24, 11:00am - 3:00pm</h2>
+                <h2 class="text-center white">Sun, November 25, 11:00am - 3:00pm</h2>
+                <h2 class="text-center white">Sat, December 1, 11:00am - 3:00pm</h2>
+                <h2 class="text-center white">Sun, December 2, 11:00am - 3:00pm</h2>
+            </div>
+        </div>
+        <div class="container" id="contact">
+            <div class="row section">
+                <div class="section-title">
+                    <h1 class="text-center">Contact</h1>
+                    <p class="text-center"><em>Feel free to contact us with any questions you might have</em></p>
+                </div>
+                <div class="col-md-4">
+                    <p><span class="glyphicon glyphicon-map-marker"></span>Los Alamitos, CA</p>
+                    <p><span class="glyphicon glyphicon-phone"></span>Phone: +00 1515151515</p>
+                    <p><span class="glyphicon glyphicon-envelope"></span>Email: mail@mail.com</p>
+                </div>
+                <div class="col-md-8">
+                    <div class="row">
+                        <div class="col-sm-6 form-group">
+                            <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+                        </div>
+                        <div class="col-sm-6 form-group">
+                            <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+                        </div>
+                    </div>
+                    <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea>
+                    <br>
+                    <div class="row">
+                        <div class="col-md-12 form-group">
+                            <button class="btn pull-right" type="submit">Send</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
 
         </div>
-
+        <div id="map"></div>
     </section>
+    <!--<section id="showDates" class="container-fluid section">-->
+        <!--<div class="container section-title">-->
+            <!--<h1 class="text-center" id="event-title">Upcoming Show</h1>-->
 
-    <section id="gallery" class="section">
+            <!--<hr style="border-top: 1px solid #686868; width: 50%;">-->
 
-        <div class="container section-title">
+            <!--<h2 class="text-center">Sun, November 18, 9:00am - 3:00pm</h2>-->
+            <!--<h2 class="text-center">Sat, November 24, 11:00am - 3:00pm</h2>-->
+            <!--<h2 class="text-center">Sun, November 25, 11:00am - 3:00pm</h2>-->
+            <!--<h2 class="text-center">Sat, December 1, 11:00am - 3:00pm</h2>-->
+            <!--<h2 class="text-center">Sun, December 2, 11:00am - 3:00pm</h2>-->
 
-            <h1>Gallery</h1>
+        <!--</div>-->
+    <!--</section>-->
 
-        </div>
+    <!--<section id="gallery" class="container-fluid section">-->
 
-    </section>
+        <!--<div class="container section-title">-->
+
+            <!--<h1>Gallery</h1>-->
+
+            <!--<div class="row">-->
+                <!--<img src="images/antique_warehouse.jpg" class="img-responsive" height="50">-->
+                <!--<img src="images/antique_warehouse.jpg" class="img-responsive">-->
+                <!--<img src="images/antique_warehouse.jpg" class="img-responsive">-->
+            <!--</div>-->
+
+        <!--</div>-->
+
+    <!--</section>-->
 
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 <script src="js/home.js"></script>
+<script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAjgZQ6jLgdTtKyvci8wrG0FaJ4UWPu2Eo&callback=initMap">
+</script>
 </html>

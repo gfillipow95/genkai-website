@@ -4,6 +4,10 @@ html,body {
     height:100%;
 }
 
+p{
+    font-family: 'Cinzel', serif;
+}
+
 #hero-text{
     text-align: center;
     position: absolute;
@@ -11,7 +15,6 @@ html,body {
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
-    font-family: 'Lusitana', sans-serif;
 }
 
 #hero-text h1{
@@ -24,7 +27,6 @@ html,body {
 }
 
 .section-title{
-    padding-top: 60px;
     font-family: 'Cinzel', serif;
 }
 
@@ -80,7 +82,77 @@ html,body {
     font-family: 'Cinzel', serif;
 }
 
-section {
-    height:calc(90% - 50px);
-    height: 90vh;
+/*section {*/
+    /*height:calc(90% - 50px);*/
+    /*height: 90vh;*/
+/*}*/
+
+#map {
+    width: 50%;
+    height: 400px;
+    background-color: grey;
+}
+
+.gridImage{
+    min-height: 47vh;
+    background-image: url("../images/plate3.jpg");
+    background-position-x: center;
+    background-position-y: center;
+    background-size: cover;
+}
+
+.gridImage2{
+    min-height: 48vh;
+    background-image: url("../images/anotherShow2.jpg");
+    background-position-x: center;
+    background-position-y: top;
+    background-size: cover;
+}
+
+.no-padding{
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.middle-text{
+    padding-top: 15%;
+}
+
+.hidden{
+    visibility: hidden;
+}
+
+#showDates{
+    /*background-color: #1a1a1a;*/
+    background-image: linear-gradient(
+            rgba(0, 0, 0, 0.7),
+            rgba(0, 0, 0, 0.7)
+    ), url("../images/stairs2.jpg");
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: top;
+}
+
+.white{
+    color: #d9d9d9;
+}
+
+#event-title{
+    margin-top: 2%;
+}
+
+#eventDateBox{
+    margin-top: 12%;
+}
+
+#map{
+    width: 100%;
+    height: 400px;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+
+#contact{
+    margin-bottom: 10%;
+    margin-top: 2%;
 }

@@ -3,7 +3,7 @@
  */
 $('#nav').affix({
     offset: {
-        top: $('#about').offset().top
+        top: $('#kanji').offset().top
     }
 });
 
@@ -22,7 +22,7 @@ $(document).ready(function(){
             // Using jQuery's animate() method to add smooth page scroll
             // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
             $('html, body').animate({
-                scrollTop: $(hash).offset().top
+                scrollTop: $(hash).offset().top - 50
             }, 800, function(){
 
                 // Add hash (#) to URL when done scrolling (default click behavior)
@@ -30,4 +30,19 @@ $(document).ready(function(){
             });
         } // End if
     });
+
+    // $(window).bind('resize', setImageHeight);
+    // setImageHeight();
 });
+
+function initMap() {
+    var uluru = {lat: 33.809989, lng: -118.070896};
+    var map = new google.maps.Map(document.getElementById('map'), {
+        zoom: 12,
+        center: uluru
+    });
+    var marker = new google.maps.Marker({
+        position: uluru,
+        map: map
+    });
+}
