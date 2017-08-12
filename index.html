@@ -6,60 +6,69 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Cinzel" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville" rel="stylesheet">
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-    <div>
-        <div id="nav" class="navbar navbar-inverse navbar-fixed-top" data-spy="affix">
-            <div class="container-fluid">
-                <div class="navbar-header">
-                    <a href="#home" class="navbar-brand"><img src="images/logo_hanko.gif" alt="GenKai"></a>
-                    <a class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </a>
-                </div>
-                <div class="navbar-collapse collapse">
-                    <ul class="nav navbar-nav">
-                        <li><a href="#home" class="navItem">Home</a></li>
-                        <li><a href="#about" class="navItem">About</a></li>
-                        <li><a href="#showDates" class="navItem">Show Dates</a></li>
-                        <li><a href="#contact" class="navItem">Contact</a></li>
-                        <!--<li><a href="#gallery" class="navItem">Gallery</a></li>-->
-                    </ul>
-                </div>
+    <div id="nav" class="navbar navbar-inverse navbar-fixed-top" data-spy="affix">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a href="#home" class="navbar-brand"><img src="images/logo_hanko.gif" alt="GenKai"></a>
+                <a class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </a>
             </div>
-        </div><!-- /.navbar -->
-    </div>
-    <section id="home" class="first">
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="#home" class="navItem">Home</a></li>
+                    <li><a href="#about" class="navItem">About</a></li>
+                    <li><a href="#showDates" class="navItem">Show Dates</a></li>
+                    <li><a href="#contact" class="navItem">Contact</a></li>
+                    <!--<li><a href="#gallery" class="navItem">Gallery</a></li>-->
+                </ul>
+            </div>
+        </div>
+    </div><!-- /.navbar -->
+    <section id="home" class="container-fluid first">
         <div class="container text-center" id="hero-text">
-            <h2 class="hero-text-header animated fadeInDown">GENKAI</h2>
+            <h2 class="hero-text-header animateText" style="visibility: hidden">GENKAI</h2>
 
-            <h2 class="hero-text-header animated fadeInDown">Japanese Antiques</h2>
-            <img class="animated fadeInDown" id="kanji" src="images/LogoTest5.png" alt="GenKai Japanese Antiques">
+            <h2 class="hero-text-header animateText" style="visibility: hidden">Japanese Antiques</h2>
+            <img class="animateText" style="visibility: hidden" id="kanji" src="images/LogoTest5.png" alt="GenKai Japanese Antiques">
         </div>
 
     </section>
 
-    <section class="container-fluid section">
+    <section class="container-fluid">
         <div id="about" class="row">
-            <div class="col-md-6">
-                <h1 class="text-center section-title middle-text">About Genkai Antiques</h1>
-                <p id="descriptionText" class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <div class="col-md-6 info-box">
+                <h1 class="text-center about-title">About Us</h1>
+                <p id="descriptionText" class="text-center" style="font-family: 'Libre Baskerville', serif;">
+                    For the past 20 years, we have specialized in selling Japanese furniture (tansu), architectural pieces, and decorative accessories.
+                    By buying directly from Japan, we offer antiques rich with culture that can be brought into your home. These antiques will range from timeless art pieces,
+                    to well crafted tansu and pottery that can still hold a purpose.
+
+                </p>
             </div>
-            <div class="col-md-6 gridImage">
+            <div class="col-md-6 gridImage info-box">
 
             </div>
         </div>
         <div class="row">
-            <div class="col-md-6 gridImage2">
+            <div class="col-md-6 gridImage2 info-box">
 
             </div>
-            <div class="col-md-6">
-                <p class="text-center middle-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <div class="col-md-6 info-box">
+                <h1 class="text-center about-title">How We Do It</h1>
+                <p class="text-center middle-text" style="font-family: 'Libre Baskerville', serif;">
+                    Our warehouse is located in Southern California in the city of Los Alamitos.  We do not have regular store hours.
+                    If you would like to visit the warehouse please call to make an appointment. We also hold four large warehouse shows in a calendar year, which follow our buying trips to Japan.
+                    If you would like to receive an email newsletter with a notification of an upcoming show or event, please leave us your email address at the bottom and you will hear from us regularly.
+                </p>
             </div>
         </div>
         <div id="showDates" class="row section-title section">
@@ -75,15 +84,14 @@
             </div>
         </div>
         <div class="container" id="contact">
-            <div class="row section">
-                <div class="section-title">
-                    <h1 class="text-center">Contact</h1>
-                    <p class="text-center"><em>Feel free to contact us with any questions you might have</em></p>
+            <div class="row">
+                <div class="contact-title">
+                    <h1 class="text-center" style="margin-bottom: 5%;">Contact</h1>
                 </div>
                 <div class="col-md-4">
-                    <p><span class="glyphicon glyphicon-map-marker"></span>Los Alamitos, CA</p>
-                    <p><span class="glyphicon glyphicon-phone"></span>Phone: +00 1515151515</p>
-                    <p><span class="glyphicon glyphicon-envelope"></span>Email: mail@mail.com</p>
+                    <p class="business-info"><span class="glyphicon glyphicon-map-marker"></span>3652 Cerritos Ave Los Alamitos, CA 90720</p>
+                    <p class="business-info"><span class="glyphicon glyphicon-phone"></span>Phone: +00 1515151515</p>
+                    <p class="business-info"><span class="glyphicon glyphicon-envelope"></span>Email: mail@mail.com</p>
                 </div>
                 <div class="col-md-8">
                     <div class="row">
@@ -104,46 +112,32 @@
                 </div>
             </div>
             <br>
-
         </div>
-        <div id="map"></div>
+        <!--<div id="map"></div>-->
+        <div class="home-newsletter">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="single">
+                            <h2>Get notified about upcoming shows!</h2>
+                            <form action="//genkaiantiques.us4.list-manage.com/subscribe/post?u=7e03906cfd0edadb7526a3d17&amp;id=d9c31ccc3b" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                                <div class="input-group">
+                                    <input type="email" name="EMAIL" id="mce-EMAIL" class="form-control" required="required" placeholder="Enter your email">
+                                    <span class="input-group-btn">
+                                    <button class="btn btn-theme" type="submit">Subscribe</button>
+                                </span>
+                                </div>
+                                <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_7e03906cfd0edadb7526a3d17_d9c31ccc3b" tabindex="-1" value=""></div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
-    <!--<section id="showDates" class="container-fluid section">-->
-        <!--<div class="container section-title">-->
-            <!--<h1 class="text-center" id="event-title">Upcoming Show</h1>-->
-
-            <!--<hr style="border-top: 1px solid #686868; width: 50%;">-->
-
-            <!--<h2 class="text-center">Sun, November 18, 9:00am - 3:00pm</h2>-->
-            <!--<h2 class="text-center">Sat, November 24, 11:00am - 3:00pm</h2>-->
-            <!--<h2 class="text-center">Sun, November 25, 11:00am - 3:00pm</h2>-->
-            <!--<h2 class="text-center">Sat, December 1, 11:00am - 3:00pm</h2>-->
-            <!--<h2 class="text-center">Sun, December 2, 11:00am - 3:00pm</h2>-->
-
-        <!--</div>-->
-    <!--</section>-->
-
-    <!--<section id="gallery" class="container-fluid section">-->
-
-        <!--<div class="container section-title">-->
-
-            <!--<h1>Gallery</h1>-->
-
-            <!--<div class="row">-->
-                <!--<img src="images/antique_warehouse.jpg" class="img-responsive" height="50">-->
-                <!--<img src="images/antique_warehouse.jpg" class="img-responsive">-->
-                <!--<img src="images/antique_warehouse.jpg" class="img-responsive">-->
-            <!--</div>-->
-
-        <!--</div>-->
-
-    <!--</section>-->
 
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 <script src="js/home.js"></script>
-<script async defer
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAjgZQ6jLgdTtKyvci8wrG0FaJ4UWPu2Eo&callback=initMap">
-</script>
 </html>

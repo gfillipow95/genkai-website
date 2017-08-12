@@ -6,6 +6,7 @@ html,body {
 
 p{
     font-family: 'Cinzel', serif;
+    line-height: 200%;
 }
 
 #hero-text{
@@ -26,12 +27,12 @@ p{
     font-size: 500%;
 }
 
-.section-title{
+.contact-title{
     font-family: 'Cinzel', serif;
 }
 
 .section{
-    height: 100%;
+    height: 95vh;
 }
 
 .navbar-brand {
@@ -87,10 +88,8 @@ p{
     /*height: 90vh;*/
 /*}*/
 
-#map {
-    width: 50%;
-    height: 400px;
-    background-color: grey;
+.info-box{
+    visibility: hidden;
 }
 
 .gridImage{
@@ -114,8 +113,24 @@ p{
     padding-right: 0;
 }
 
+.section-title{
+    font-family: 'Cinzel', serif;
+}
+
+.about-title{
+    font-family: 'Cinzel', serif;
+    padding-top: 7%;
+    padding-bottom: 5%;
+}
+
 .middle-text{
-    padding-top: 15%;
+    /*padding-top: 20%;*/
+}
+
+@media (max-width: 768px){
+    .middle-text{
+        padding-top: 2%;
+    }
 }
 
 .hidden{
@@ -131,6 +146,21 @@ p{
     background-size: cover;
     background-position-x: center;
     background-position-y: top;
+    padding-top: 5%;
+}
+
+#border{
+    border-style: solid;
+    border-width: medium;
+    border-color: white;
+    margin-right: 20%;
+    margin-left: 20%;
+}
+
+@media (max-width: 768px){
+    #border{
+        border: none;
+    }
 }
 
 .white{
@@ -142,17 +172,46 @@ p{
 }
 
 #eventDateBox{
-    margin-top: 12%;
-}
-
-#map{
-    width: 100%;
-    height: 400px;
-    -webkit-filter: grayscale(100%);
-    filter: grayscale(100%);
+    margin-top: 10%;
 }
 
 #contact{
     margin-bottom: 10%;
     margin-top: 2%;
+}
+
+.business-info{
+    font-size: 110%;
+}
+
+.home-newsletter {
+    padding: 100px 0;
+    background: #f2f2f2;
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+.home-newsletter .single {
+    max-width: 650px;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    z-index: 2; }
+.home-newsletter .single h2 {
+    font-size: 22px;
+    color: black;
+    text-transform: uppercase;
+    font-family: 'Cinzel', serif;
+    margin-bottom: 40px; }
+.home-newsletter .single .form-control {
+    height: 50px;
+    background: rgba(255, 255, 255, 0.6);
+    border-color: transparent; }
+.home-newsletter .single .form-control:focus {
+    box-shadow: none;
+    border-color: #243c4f; }
+.home-newsletter .single .btn {
+    min-height: 50px;
+    background: #243c4f;
+    color: #fff;
 }

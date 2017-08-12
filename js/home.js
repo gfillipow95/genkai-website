@@ -1,11 +1,14 @@
 /**
  * Created by Gen on 6/25/2017.
  */
+
+
 $('#nav').affix({
     offset: {
         top: $('#kanji').offset().top
     }
 });
+
 
 $(document).ready(function(){
     // Add smooth scrolling to all links
@@ -33,16 +36,16 @@ $(document).ready(function(){
 
     // $(window).bind('resize', setImageHeight);
     // setImageHeight();
+
+    setTimeout(function(){
+        $('.animateText').css("visibility", "visible").addClass("animated fadeInDown");
+    }, 500);
 });
 
-function initMap() {
-    var uluru = {lat: 33.809989, lng: -118.070896};
-    var map = new google.maps.Map(document.getElementById('map'), {
-        zoom: 12,
-        center: uluru
-    });
-    var marker = new google.maps.Marker({
-        position: uluru,
-        map: map
-    });
-}
+$(window).scroll(function(){
+   $(".info-box").each(function(){
+      if($(window).scrollTop() > $(this).offset().top - ($(window).height()/1.05)){
+          $(this).css("visibility", "visible").addClass("animated zoomIn");
+      }
+   });
+});
