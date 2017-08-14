@@ -90,6 +90,7 @@ p{
 
 .info-box{
     visibility: hidden;
+    transition: 0.5s ease;
 }
 
 .gridImage{
@@ -120,7 +121,13 @@ p{
 .about-title{
     font-family: 'Cinzel', serif;
     padding-top: 7%;
-    padding-bottom: 5%;
+    padding-bottom: 4%;
+}
+
+.description-title{
+    font-family: 'Cinzel', serif;
+    padding-top: 7%;
+    padding-bottom: 3%;
 }
 
 .middle-text{
@@ -136,6 +143,7 @@ p{
 .hidden{
     visibility: hidden;
 }
+
 
 #showDates{
     /*background-color: #1a1a1a;*/
