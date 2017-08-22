@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>GenKai</title>
+    <title>Japanese Antique Shop</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Cinzel" rel="stylesheet">
@@ -25,7 +25,6 @@
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li><a href="#home" class="navItem">Home</a></li>
                     <li><a href="#about" class="navItem">About</a></li>
                     <li><a href="#showDates" class="navItem">Show Dates</a></li>
                     <li><a href="#contact" class="navItem">Contact</a></li>
@@ -38,7 +37,7 @@
         <div class="container text-center" id="hero-text">
             <h2 class="hero-text-header animateText" style="visibility: hidden">GENKAI</h2>
 
-            <h2 class="hero-text-header animateText" style="visibility: hidden">Japanese Antiques</h2>
+            <h2 class="hero-text-header animateText" style="visibility: hidden" id="antique">Japanese Antiques</h2>
             <img class="animateText" style="visibility: hidden" id="kanji" src="images/LogoTest5.png" alt="GenKai Japanese Antiques">
         </div>
 
@@ -51,7 +50,7 @@
                 <p id="descriptionText" class="text-center" style="font-family: 'Libre Baskerville', serif;">
                     For the past 20 years, we have specialized in selling Japanese furniture (tansu), architectural pieces, and decorative accessories.
                     By buying directly from Japan, we offer antiques rich with culture that can be brought into your home. These antiques range from timeless art pieces,
-                    to well crafted tansu and ceramics that can still hold a purpose.
+                    to well crafted tansu and ceramics that can still hold a purpose while telling a story of a unique past.
 
                 </p>
             </div>
@@ -66,8 +65,7 @@
             <div class="col-md-6 info-box">
                 <h1 class="text-center description-title">How We Do It</h1>
                 <p class="text-center middle-text" style="font-family: 'Libre Baskerville', serif;">
-                    Our warehouse is located in Southern California in the city of Los Alamitos.  We do not have regular store hours.
-                    If you would like to visit the warehouse please call to make an appointment. We also hold four large warehouse shows in a calendar year, which follow our buying trips to Japan.
+                    Our warehouse is located in Southern California in the city of Los Alamitos. We hold four large warehouse shows in a calendar year, which follow our buying trips to Japan.
                     If you would like to receive an email newsletter with a notification of an upcoming show or event, please leave us your email address at the bottom and you will hear from us regularly.
                 </p>
             </div>
@@ -77,42 +75,31 @@
 
             <hr style="border-top: 1px solid white; width: 20%;">
             <div id="eventDateBox">
-                <h2 class="text-center white">Sun, November 18, 9:00am - 3:00pm</h2>
-                <h2 class="text-center white">Sat, November 24, 11:00am - 3:00pm</h2>
-                <h2 class="text-center white">Sun, November 25, 11:00am - 3:00pm</h2>
-                <h2 class="text-center white">Sat, December 1, 11:00am - 3:00pm</h2>
-                <h2 class="text-center white">Sun, December 2, 11:00am - 3:00pm</h2>
+                <h2 class="text-center white">Coming Soon</h2>
+                <!--<h2 class="text-center white">Sun, November 18, 9:00am - 3:00pm</h2>-->
+                <!--<h2 class="text-center white">Sat, November 24, 11:00am - 3:00pm</h2>-->
+                <!--<h2 class="text-center white">Sun, November 25, 11:00am - 3:00pm</h2>-->
+                <!--<h2 class="text-center white">Sat, December 1, 11:00am - 3:00pm</h2>-->
+                <!--<h2 class="text-center white">Sun, December 2, 11:00am - 3:00pm</h2>-->
             </div>
         </div>
         <div class="container" id="contact">
             <div class="row">
                 <div class="contact-title">
-                    <h1 class="text-center" style="margin-bottom: 5%;">Contact</h1>
+                    <h1 class="text-center" style="margin-bottom: 7%;">Contact</h1>
                 </div>
-                <div class="col-md-4">
-                    <p class="business-info"><span class="glyphicon glyphicon-map-marker"></span>3652 Cerritos Ave Los Alamitos, CA 90720</p>
-                    <p class="business-info"><span class="glyphicon glyphicon-phone"></span>Phone: +00 1515151515</p>
-                    <p class="business-info"><span class="glyphicon glyphicon-envelope"></span>Email: mail@mail.com</p>
-                    <p class="business-info"><span><i class="fa fa-facebook-square fa-lg" aria-hidden="true"></i></span> Facebook</p>
-                    <p class="business-info"><span><i class="fa fa-yelp fa-lg" aria-hidden="true"></i></span> Yelp</p>
-
+                <div class="col-md-4 text-center">
+                    <h3 class="contact-title">Location</h3>
+                    <a href="http://maps.google.com/?q=3652 Cerritos Ave Los Alamitos, CA 90720"><p class="business-info" style="font-family: 'Libre Baskerville'; color: black;"><span class="glyphicon glyphicon-map-marker"></span>3652 Cerritos Ave <br>Los Alamitos, CA 90720</p></a>
                 </div>
-                <div class="col-md-8">
-                    <div class="row">
-                        <div class="col-sm-6 form-group">
-                            <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
-                        </div>
-                        <div class="col-sm-6 form-group">
-                            <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
-                        </div>
-                    </div>
-                    <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea>
-                    <br>
-                    <div class="row">
-                        <div class="col-md-12 form-group">
-                            <button class="btn pull-right" type="submit">Send</button>
-                        </div>
-                    </div>
+                <div class="col-md-4 text-center">
+                    <h3 class="contact-title">Phone</h3>
+                    <p class="business-info" style="font-family: 'Libre Baskerville'"><span class="glyphicon glyphicon-phone"></span>562-596-0494</p>
+                    <p class="business-info" style="font-family: 'Libre Baskerville'"><span class="glyphicon glyphicon-phone"></span>Tom's Cell: 562-596-494</p>
+                </div>
+                <div class="col-md-4 text-center">
+                    <h3 class="contact-title">Email</h3>
+                    <a href="mailto:genkaijapanese@gmail.com"><p class="business-info" style="font-family: 'Libre Baskerville'; color: black;"><span class="glyphicon glyphicon-envelope" ></span>genkaijapanese@gmail.com</p></a>
                 </div>
             </div>
             <br>
@@ -135,6 +122,10 @@
                             </form>
                         </div>
                     </div>
+                </div>
+                <div class="row text-center">
+                    <p class="business-info social-media-icons"><a style="color: inherit" href="https://www.facebook.com/fillipow/"><span><i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i></span></a></p>
+                    <p class="business-info social-media-icons"><a style="color: inherit" href="https://www.yelp.com/biz/genkai-japanese-antiques-los-alamitos"><span><i class="fa fa-yelp fa-2x" aria-hidden="true"></i></span></a></p>
                 </div>
             </div>
         </div>

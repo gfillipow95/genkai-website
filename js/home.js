@@ -5,7 +5,7 @@
 
 $('#nav').affix({
     offset: {
-        top: $('#kanji').offset().top
+        top: $('#antique').offset().top
     }
 });
 
