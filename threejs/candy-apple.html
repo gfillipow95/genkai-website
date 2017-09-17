@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset=utf-8>
+		<title>My first three.js app</title>
+		<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+		<style>
+			body{
+				margin: 0;
+				overflow: hidden;
+			}
+		</style>
+	</head>
+	<body>
+		<canvas id="myCanvas"></canvas>
+		<script src="js/three.js"></script>
+		<script src="js/OrbitControls.js"></script>
+		<script>
+
+            var scene = new THREE.Scene();
+            var camera = new THREE.PerspectiveCamera(60, window.innerWidth/window.innerHeight, 0.1, 1000);
+            camera.position.set(0, 40, 60);
+            camera.lookAt(new THREE.Vector3(0,15,0))
+
+            var renderer = new THREE.WebGLRenderer({
+                canvas: document.querySelector("#myCanvas"), antialias: true
+            });
+
+            renderer.setClearColor( 0xfff6e6 );
+            renderer.setSize(window.innerWidth, window.innerHeight);
+
+            var ambientLight = new THREE.AmbientLight( 0xffffff, 0.2 );
+            scene.add( ambientLight );
+
+            var pointLight = new THREE.PointLight( 0xffffff, 1 );
+            pointLight.position.set( -25, 50, 25 );
+            pointLight.castShadow = true;
+            pointLight.shadow.mapSize.width = 1024;
+            pointLight.shadow.mapSize.height = 1024;
+            scene.add( pointLight );
+
+            renderer.shadowMap.enabled = true;
+            renderer.shadowMap.type = THREE.PCFSoftShadowMap;
+
+            var shadowMaterial = new THREE.ShadowMaterial( { color: 0x343434 } );
+            shadowMaterial.opacity = 0.5;
+            var shadowGeometry = new THREE.BoxGeometry(100, .1, 100);
+            var shadow = new THREE.Mesh(shadowGeometry, shadowMaterial);
+            shadow.receiveShadow = true;
+            scene.add(shadow);
+
+            var geometry = new THREE.OctahedronGeometry(10, 1);
+            var material = new THREE.MeshStandardMaterial({
+                color: 0xb35900,
+                flatShading: true,
+                metalness: 0
+            });
+
+            var mesh = new THREE.Mesh(geometry, material);
+            mesh.position.y += 10;
+            mesh.castShadow = true;
+            mesh.receiveShadow = true;
+            scene.add(mesh);
+
+            var pole = new THREE.BoxGeometry(1, 40, 1);
+            var poleMaterial = new THREE.MeshStandardMaterial({
+                color: 0xffd9b3,
+                flatShading: true,
+                metalness: 0
+            })
+
+            var meshPole = new THREE.Mesh(pole, poleMaterial);
+            meshPole.position.y += 25;
+            meshPole.castShadow = true;
+            meshPole.receiveShadow = true;
+            scene.add(meshPole);
+
+            var appleTopGeo = new THREE.ConeGeometry(3, 3, 9);
+            var appleTopMaterial = new THREE.MeshStandardMaterial({
+                color: 0x88cc00,
+                flatShading: true,
+                metalness: 0
+            })
+
+            var appleTop = new THREE.Mesh(appleTopGeo, appleTopMaterial);
+            appleTop.position.y += 19.5;
+            appleTop.castShadow = true;
+            appleTop.receiveShadow = true;
+            scene.add(appleTop);
+
+
+            var appleBottomGeo = new THREE.ConeGeometry(10, 3, 9);
+            var appleBottomMaterial = new THREE.MeshStandardMaterial({
+                color: 0xb35900,
+                flatShading: true,
+                metalness: 0
+            })
+
+            var appleBottom = new THREE.Mesh(appleBottomGeo, appleBottomMaterial);
+            appleBottom.position.y += 3;
+            appleBottom.castShadow = true;
+            appleBottom.receiveShadow = true;
+            scene.add(appleBottom);
+
+            
+
+            renderer.render(scene, camera);
+
+            var controls = new THREE.OrbitControls( camera, renderer.domElement );
+            controls.target = new THREE.Vector3(0,15,0);
+            controls.maxPolarAngle = Math.PI / 2;
+            controls.addEventListener( 'change', function() { renderer.render(scene, camera); } );
+
+		</script>
+	</body>
+</html>
